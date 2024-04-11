@@ -1,12 +1,12 @@
 <p align="center"> 
-  <img alt="Projeto" src="./assets/tabela vazia.png">
+  <img alt="Projeto" src="./assets/tabela inicial.png">
 
 </p>
 
  <p align= "center"
-   >Game Over! 💀
+Tabela sem registro
 </p>
- <img alt="Projeto" src="./colisão.png">
+  <img alt="Projeto" src="./assets/tabela vazia.png">
 
 
 
@@ -20,10 +20,13 @@
 - **HTML**
 - **CSS**
 - **Javascript**
+- **Modularização**
+- **Metodos Estaticos e Promessas**
+- **Imutabilidade**
 
 
   
   ---
   <h3 align="center">Projeto💻 </h3>
-  <p>Acesse o projeto em <a href="https://micaela-marques.github.io/mariojump/"> site🌐
+  <p>Acesse o projeto em <a href=""> site🌐
   </p>
