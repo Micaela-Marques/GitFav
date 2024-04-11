@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img alt="Projeto" src="./assets/tabela inicial.png">
+  <img alt="Projeto" src="./assets/tela inicial.png">
 
 </p>
 
