@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 62.5%;
+    font-family: 'roboto', sans-serif;
+
+    --background-collor: #000;
+    --text-input: #7C7C8A;
+    --collor-button: #065E7C;
+    --input-collor: #06181C;
+    --text-button: white;
+    --text-table-empyt: #4E5455;
+    --text-table: #E1E1E6;
+    --collor-table: #4A808C;
+    --collor-odd: #06161B;
+    --color-even: #062a31;
+    --text-remove: red;
+
+
+}
+
+body {
+    background-color: var(--background-collor);
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 116px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#app {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 4px;
+}
+
+input {
+    width: 462px;
+    height: 48px;
+    border-radius: .4rem .4rem .4rem .4rem;
+    padding: 12px;
+    background-color: var(--input-collor);
+    color: var(--text-input);
+    border: none;
+}
+
+input::placeholder {
+    color: var(--text-input);
+}
+
+.logo {
+    width: 186px;
+    height: 32px;
+}
+
+button {
+    width: 170px;
+    height: 48px;
+    background-color: var(--collor-button);
+    border-radius: .4rem .4rem .4rem .4rem;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+    color: var(--text-button);
+
+
+}
+
+button:hover {
+    background-color: var(--text-button);
+    color: var(--collor-button);
+    filter: brightness(1.1);
+}
+
+.search button:hover svg path {
+    fill: var(--collor-button);
+
+}
+
+.empty {
+
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-table-empyt);
+    gap: 6rem;
+}
+
+.empty .empty-content {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.empty-content p {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+
+.hide {
+    display: none;
+    transition: display .5s ease;
+}
+
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-table);
+}
+
+table th {
+    background-color: var(--collor-table);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+/*Cor das tabelas*/
+
+table tr:nth-child(odd) {
+    background-color: var(--collor-odd);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--color-even);
+}
+
+.empty-table {
+    background-image: url(./assets/Empty.png);
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir toda a célula */
+    background-position: center;
+    /* Centraliza a imagem na célula */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-color: var(--text-table-empyt);
+}
+
+
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+td.user a {
+    text-decoration: none;
+
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+.remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-remove);
+}
