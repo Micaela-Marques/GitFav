@@ -5,10 +5,10 @@
 
  <p align= "center"
 Tabela sem registro
-</p>
+
   <img alt="Projeto" src="./assets/tabela vazia.png">
 
-
+</p>
 
 <!--  -->
 
